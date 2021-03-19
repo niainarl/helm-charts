@@ -5,7 +5,7 @@ replicaCount: 1
 ## pgAdmin4 container image
 ##
 image:
-  registry: docker.io
+  registry: dockerfactory-iva.si.francetelecom.fr
   repository: dpage/pgadmin4
   tag: "5.0"
   pullPolicy: IfNotPresent
