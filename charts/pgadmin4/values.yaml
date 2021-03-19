@@ -61,6 +61,14 @@ serverDefinitions:
 
 networkPolicy:
   enabled: true
+  # Need for Network Policies contraints
+master:
+  podLabels:
+    netpolicy: dfyarchicloud
+
+slave:
+  podLabels:
+    netpolicy: dfyarchicloud
 
 ingress:
   ## If true, pgAdmin4 Ingress will be created
