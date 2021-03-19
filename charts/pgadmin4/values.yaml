@@ -6,8 +6,8 @@ replicaCount: 1
 ##
 image:
   registry: dockerfactory-iva.si.francetelecom.fr
-  repository: dpage/pgadmin4
-  tag: "5.0"
+  repository: archicloud/dpage/pgadmin4
+  tag: "4.29"
   pullPolicy: IfNotPresent
 
 ## Deployment annotations
