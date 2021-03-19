@@ -14,7 +14,8 @@ image:
 annotations: {}
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
+  loadBalancerIP: "10.101.54.38"
   port: 80
   targetPort: http
   # targetPort: 4181 To be used with a proxy extraContainer
@@ -133,7 +134,7 @@ extraSecretMounts: []
 ## For example, to add an authentication proxy to a pgadmin4 pod.
 extraContainers: |
 # - name: proxy
-#   image: quay.io/gambol99/keycloak-proxy:latest
+#   image: dockerfactory-iva.si.francetelecom.fr/jboss/keycloak-proxy:11.0.3
 #   args:
 #   - -provider=github
 #   - -client-id=
